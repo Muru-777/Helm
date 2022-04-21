@@ -1,0 +1,40 @@
+helm template hector -f ./config/env/values.yaml . > ~/test.yaml
+
+helm lint fk-sp-hector or helm lint . In Chart.yaml directory
+
+helm install --dry-run --debug --generate-name . -f ./config/env/values.yaml > ~/test.yaml
+
+Helm list
+
+helm history seller-cache-populator
+
+helm lint -f ./config/stage/values.yaml .
+
+helm lint -f ./config/stage/values.yaml . —debug
+
+helm version
+
+
+Important commands:
+
+helm template hector -f ./config/env/values.yaml . > ~/test.yaml
+helm lint -f ./config/stage/values.yaml .
+helm install --dry-run --debug --generate-name . -f ./config/env/values.yaml > ~/test.yaml
+Helm uninstall seller-cache-populator
+Helm list
+helm history seller-cache-populator
+Helm install seller-cache-populator . -f ./config/env/values.yaml
+Once release is created if u want to get yaml file helm get all seller-cache-populator
+helm get values seller-cache-populator
+helm get manifest seller-cache-populator
+helm dep list
+Helm fetch chart-name —untar (or) helm pull
+Helm repo add
+helm package . -d ~/Downloads
+helm upgrade seller-cache-populator chart-name
+Helm rollback seller-cache-populator 1<revision_number> 
+Helm env
+Helm create test
+Helm repo add harbor url
+helm status seller-cache-populator
+Helm test seller-cache-populator - If u want to run a test.
