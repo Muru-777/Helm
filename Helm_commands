@@ -1,3 +1,5 @@
+Helm commands:
+
 helm template hector -f ./config/env/values.yaml . > ~/test.yaml
 
 helm lint fk-sp-hector or helm lint . In Chart.yaml directory
